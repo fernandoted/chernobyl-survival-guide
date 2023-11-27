@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+
 import { HomeComponent } from './home/home.component';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +11,8 @@ import { HomeComponent } from './home/home.component';
   imports: [
     CommonModule,
     RouterOutlet,
-    HomeComponent
+    HomeComponent,
+    ButtonModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
